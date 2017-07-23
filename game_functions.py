@@ -21,10 +21,10 @@ def check_keyup_event(event, ship):
         ship.move_right = False
     if event.key == pygame.K_LEFT:
         ship.move_left = False
-        if event.key == pygame.K_UP:
-            ship.move_up = False
-        if event.key == pygame.K_DOWN:
-            ship.move_down = False
+    if event.key == pygame.K_UP:
+        ship.move_up = False
+    if event.key == pygame.K_DOWN:
+        ship.move_down = False
 
 
 def check_event(setting, screen, ship, bullets):
